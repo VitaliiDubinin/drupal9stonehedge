@@ -1,11 +1,11 @@
-version: '3.7'
+version: "3.7"
 
 services:
-
   app:
     hostname: "drupal9.docker.so"
     container_name: "drupal9-example-app"
-    image: "druidfi/drupal:7.4-test"
+    # image: "druidfi/drupal:7.4-test"
+    image: "druidfi/drupal-test:php-7.4"
     depends_on:
       - db
     environment:
